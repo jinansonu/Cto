@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 0, 122, 255;
+  --color-secondary: 88, 86, 214;
+  --color-background: 255, 255, 255;
+  --color-foreground: 0, 0, 0;
+  --color-border: 229, 231, 235;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: 59, 130, 246;
+    --color-secondary: 139, 92, 246;
+    --color-background: 17, 24, 39;
+    --color-foreground: 243, 244, 246;
+    --color-border: 55, 65, 81;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+* {
+  box-sizing: border-box;
+}
