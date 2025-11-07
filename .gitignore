@@ -1,0 +1,22 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# pnpm
+.pnpm-store/
+
+# Supabase local state
+supabase/.temp/
+.supabase/
+
+# Environment files
+.env
+.env.*
+*.env
+
+# Build artefacts
+*.tsbuildinfo
+
+# OS-specific files
+.DS_Store
